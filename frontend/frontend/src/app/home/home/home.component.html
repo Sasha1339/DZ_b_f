@@ -1,0 +1,20 @@
+<main>
+  <div class="main" [ngStyle]="{display: divDisplay?'block':'none', transform: divTrans? 'scale(0.01)':'none'}">
+    <p >Приветствуем!</p>
+    <p>Сайт предназначен для визуализации COMTRADE данных</p>
+    <p>В форме ниже ты можешь загрузить файлы с раширениями .cfg и .dat</p>
+    <form class ="form"  (ngSubmit)="sendFiles()" [formGroup]="form" enctype="multipart/form-data" method="POST">
+      <p><input type="file" id="cfg" name="cfg" (change)="changeCfgName($event)"/>
+        <label for="cfg" class="label">{{cfg}}</label></p>
+
+      <p class="p"><input type="file" id="dat" name="dat" (change)="changeDatName($event)"/>
+        <label for="dat">{{dat}}</label></p>
+      <p><input class="submit" type="submit" value="Отправить" [ngStyle]="{display:onDisplay?'inline':'none'}"></p>
+    </form>
+  </div>
+  <div class="main" id="divNew" [ngStyle]="{display: divNewDisplay?'block':'none', transform: divNewTrans? 'scale(0.01)':'none'}">
+
+    <p>Данные поступили!</p>
+    <p>Теперь ты можешь узнать информацию о неисправностях в Data</p>
+  </div>
+</main>

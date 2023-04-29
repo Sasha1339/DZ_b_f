@@ -1,0 +1,40 @@
+div{
+  margin: 3vh;
+  background: white;
+  padding: 1vh 3vw;
+  transition: 1s;
+}
+.demo-chart{
+  margin: 0;
+  border: 2px solid #6d6d6d;
+  background: #fff2e8;
+}
+.main{
+  border: 3px solid #6d6d6d;
+}
+p{
+  text-align: center;
+  font-family: Impact;
+  font-size: 3vh;
+}
+form{
+  margin: auto;
+  vertical-align: center;
+}
+.demo-chart:hover{
+  box-shadow: 20px 5px 5px #3E3C3CFF;
+}
+input{
+  margin: auto;
+  display: flex;
+  padding: 2vh 4vw;
+  font-family: Impact;
+  font-size: 3vh;
+  background: #6d6d6d;
+  border: 0;
+  color: white;
+  transition: 1s;
+}
+input:hover{
+  box-shadow: 20px 5px 5px #3E3C3CFF;
+}

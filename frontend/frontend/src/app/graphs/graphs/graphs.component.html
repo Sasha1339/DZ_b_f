@@ -1,0 +1,10 @@
+<main>
+  <div class = "main">
+    <div echarts [options]="options" class="demo-chart"></div>
+    <form (ngSubmit)="get()">
+      <p>Нажимая на кнопку Вы даете согласие на рисовании осциллограммы</p>
+      <p><input type="submit" value="Нарисовать" (mousedown)="get()" (click)="get()"></p>
+    </form>
+
+  </div>
+</main>

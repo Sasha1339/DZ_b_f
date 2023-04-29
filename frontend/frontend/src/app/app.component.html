@@ -1,0 +1,10 @@
+<header>
+
+  <div class="bar" [routerLink]="['/home']" (click)="onHome()">Home</div>
+  <div class="bar" [routerLink]="['/data']" (click)="onData()">Data</div>
+  <div class="bar" [routerLink]="['/graphs']" (click)="onGraphs()">Graphs</div>
+</header>
+<footer>
+  <p class="pp">Работа студента, 2023, НИУ МЭИ, кафедра РЗиАЭ</p>
+</footer>
+<router-outlet></router-outlet>

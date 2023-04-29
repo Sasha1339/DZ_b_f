@@ -1,0 +1,96 @@
+div{
+  width: 100vw;
+  margin: 15vh auto;
+  font-size: 3vh;
+  font-family: Impact;
+  padding: 0.5vh 0;
+  transition: 0.3s;
+}
+main{
+  width: 100vw;
+  font-family: optima, sans-serif;
+}
+p{
+  text-align: center;
+}
+[type="file"] {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  white-space: nowrap;
+  width: 1px;
+
+}
+.p{
+  margin: 5vh 0 0 0;
+}
+label{
+  padding: 0.5vw 5vw;
+  background: #6d6d6d;
+  color: white;
+  transform-style: preserve-3d;
+  width: 20%;
+}
+label:hover{
+  box-shadow: 20px 5px 5px #3E3C3CFF;
+  transition: 1s;
+  padding: 0.5vw 5vw;
+
+}
+label:not( :hover ){
+  transition: 0.7s;
+}
+
+.submit{
+  font-size: 2vh;
+  font-family: Impact;
+  color: white;
+  padding: 0.5vw 3vw;
+  border: 0;
+  background: #1a5e37;
+  box-shadow: 0 -3px rgb(14, 49, 30) inset;
+  transition: 0.7s;
+}
+img{
+  margin: auto;
+}
+.submit:active{
+  background: #249153;
+  transition: 1s;
+}
+#divNew:hover{
+  box-shadow: 20px 5px 5px #3E3C3CFF;
+  transition: 1s;
+  margin: 15vh auto;
+  background: #888686;
+  width: 70vw;
+  color: white;
+}
+#divNew:not( :hover ){
+  transition: 1s;
+
+}
+form{
+  width: 100vw;
+  margin: auto;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  transition: 1s;
+}
+form:hover > p > label{
+  background: #53ea93;
+  color: black;
+}
+form:hover{
+  box-shadow: 20px 5px 5px #3E3C3CFF;
+  transition: 1s;
+  background: #888686;
+  width: 60vw;
+}
+form:not( :hover ){
+  transition: 1s;
+
+}

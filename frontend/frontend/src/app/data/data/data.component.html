@@ -1,0 +1,33 @@
+<main>
+  <div>
+    <p *ngIf="showFirst" [ngStyle]="{opacity: show? 1:0}">Здесь будет отображаться ваша таблица с результатами</p>
+    <br *ngIf="showFirst" [ngStyle]="{opacity: show? 1:0}">
+    <form *ngIf="showFirst" [ngStyle]="{opacity: show? 1:0}">
+      <p>Для получения последних данных нажимай на кнопку</p>
+      <br>
+      <p><input type="submit" value="Получить" (click)="changeShow()"></p>
+    </form>
+
+    <div class="div" *ngIf="showSecond" [ngStyle]="{opacity: showS? 1:0}">
+      <p class="p">Для данных в виде осциллограмм перейдите в Graphs</p>
+      <table>
+
+        <caption style="margin: 1vh 0">Данные повреждений</caption>
+
+        <tr>
+          <th>№ Channel</th>
+          <th>ID Channel</th>
+          <th>Time, mс</th>
+          <th>Value, А</th>
+        </tr>
+        <tr *ngFor="let measurement of measurements">
+          <th>{{measurement.numberChannel}}</th>
+          <th>{{measurement.channel}}</th>
+          <th>{{measurement.time/1000}}</th>
+          <th>{{math.round(measurement.valueCurrent*1000)/1000}}</th>
+        </tr>
+      </table>
+
+    </div>
+  </div>
+</main>

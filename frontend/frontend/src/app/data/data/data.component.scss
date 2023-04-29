@@ -1,0 +1,72 @@
+div{
+  margin: 15vh 0 0 0;
+  font-size: 3vh;
+  font-family: Impact;
+
+}
+table{
+  margin: auto;
+  border: 1px solid ;
+  border-collapse: collapse;
+  transition: 1s;
+  font-size: 2.5vh;
+}
+th{
+  border: 2px solid ;
+  padding: 1vh 1vw;
+  font-family: optima, sans-serif;
+
+}
+input{
+  padding: 2vh 4vw;
+  font-family: Impact;
+  font-size: 3vh;
+  background: #6d6d6d;
+  border: 0;
+  color: white;
+  transition: 1s;
+}
+input:hover{
+  box-shadow: 20px 5px 5px #3E3C3CFF;
+}
+.div{
+  padding: 4vh 0;
+  transition: 1s;
+margin: auto;
+  width: 100vw;
+}
+.div:hover{
+  background: #6d6d6d;
+  box-shadow: 20px 5px 5px #3E3C3CFF;
+  width: 70vw;
+}
+.div:hover > table{
+  color: white;
+  border-color: white;
+}
+form:hover > p > input {
+  background: #8bbdd3;
+  color: black;
+}
+  form:hover > p{
+
+    color: white;
+  }
+
+
+p{
+  margin: auto;
+  text-align: center;
+  transition: 1s;
+}
+form{
+  width: 100vw;
+  margin: 1vh auto;
+  transition: 1s;
+  padding: 3vh 0 3vh 0;
+}
+form:hover{
+  width: 70vw;
+  box-shadow: 20px 5px 5px #3E3C3CFF;
+  background: #6d6d6d;
+}
